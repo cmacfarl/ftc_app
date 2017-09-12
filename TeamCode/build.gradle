@@ -11,5 +11,13 @@
 
 // Custom definitions may go here
 
+apply plugin: 'com.android.application'
+
+android {
+    sourceSets {
+        main.java.srcDirs += '../../terkel/java'
+    }
+}
+
 // Include common definitions from above.
 apply from: '../build.common.gradle'
