@@ -17,7 +17,7 @@
         <LynxModule name="Expansion Hub 2" port="2">
             <NeveRest40Gearmotor name="rotate" port="0" />
             <NeveRest60Gearmotor name="linear" port="1" />
-            <NeveRest40Gearmotor name="slide" port="2" />
+            <NeveRest60Gearmotor name="slide" port="2" />
             <Servo name="relicRotate" port="0" />
             <LynxEmbeddedIMU name="imu" port="0" bus="0" />
         </LynxModule>
