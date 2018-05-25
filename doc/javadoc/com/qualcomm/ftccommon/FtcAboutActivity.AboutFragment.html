@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -168,16 +168,8 @@ extends android.preference.PreferenceFragment</pre>
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected PreferencesHelper</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.AboutFragment.html#preferencesHelper">preferencesHelper</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.AboutFragment.html#remoteConfigure">remoteConfigure</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected android.content.SharedPreferences.OnSharedPreferenceChangeListener</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.AboutFragment.html#sharedPreferencesListener">sharedPreferencesListener</a></span></code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -224,19 +216,25 @@ extends android.preference.PreferenceFragment</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.AboutFragment.html#onStart--">onStart</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.AboutFragment.html#refreshAllUnavailable--">refreshAllUnavailable</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.AboutFragment.html#onStop--">onStop</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.AboutFragment.html#refreshLocal-RobotCoreCommandList.AboutInfo-">refreshLocal</a></span>(RobotCoreCommandList.AboutInfo&nbsp;aboutInfo)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.AboutFragment.html#setPreferenceSummary-int-">setPreferenceSummary</a></span>(int&nbsp;idPref)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.AboutFragment.html#refreshRemote-RobotCoreCommandList.AboutInfo-">refreshRemote</a></span>(RobotCoreCommandList.AboutInfo&nbsp;aboutInfo)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.AboutFragment.html#setPreferenceSummary-java.lang.String-">setPreferenceSummary</a></span>(java.lang.String&nbsp;prefName)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.AboutFragment.html#setPreferenceSummary-int-java.lang.String-">setPreferenceSummary</a></span>(int&nbsp;idPref,
+                    java.lang.String&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.AboutFragment.html#setPreferenceSummary-java.lang.String-java.lang.String-">setPreferenceSummary</a></span>(java.lang.String&nbsp;prefName,
+                    java.lang.String&nbsp;value)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -244,7 +242,7 @@ extends android.preference.PreferenceFragment</pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;android.preference.PreferenceFragment</h3>
-<code>addPreferencesFromIntent, addPreferencesFromResource, findPreference, getPreferenceManager, getPreferenceScreen, onActivityCreated, onActivityResult, onCreateView, onDestroy, onDestroyView, onPreferenceTreeClick, onSaveInstanceState, setPreferenceScreen</code></li>
+<code>addPreferencesFromIntent, addPreferencesFromResource, findPreference, getPreferenceManager, getPreferenceScreen, onActivityCreated, onActivityResult, onCreateView, onDestroy, onDestroyView, onPreferenceTreeClick, onSaveInstanceState, onStart, onStop, setPreferenceScreen</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.android.app.Fragment">
@@ -277,28 +275,10 @@ extends android.preference.PreferenceFragment</pre>
 <a name="remoteConfigure">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>remoteConfigure</h4>
-<pre>protected&nbsp;boolean remoteConfigure</pre>
-</li>
-</ul>
-<a name="preferencesHelper">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>preferencesHelper</h4>
-<pre>protected&nbsp;PreferencesHelper preferencesHelper</pre>
-</li>
-</ul>
-<a name="sharedPreferencesListener">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>sharedPreferencesListener</h4>
-<pre>protected&nbsp;android.content.SharedPreferences.OnSharedPreferenceChangeListener sharedPreferencesListener</pre>
+<h4>remoteConfigure</h4>
+<pre>protected final&nbsp;boolean remoteConfigure</pre>
 </li>
 </ul>
 </li>
@@ -326,6 +306,33 @@ extends android.preference.PreferenceFragment</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="refreshLocal-RobotCoreCommandList.AboutInfo-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refreshLocal</h4>
+<pre>public&nbsp;void&nbsp;refreshLocal(RobotCoreCommandList.AboutInfo&nbsp;aboutInfo)</pre>
+</li>
+</ul>
+<a name="refreshRemote-RobotCoreCommandList.AboutInfo-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refreshRemote</h4>
+<pre>public&nbsp;void&nbsp;refreshRemote(RobotCoreCommandList.AboutInfo&nbsp;aboutInfo)</pre>
+</li>
+</ul>
+<a name="refreshAllUnavailable--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refreshAllUnavailable</h4>
+<pre>public&nbsp;void&nbsp;refreshAllUnavailable()</pre>
+</li>
+</ul>
 <a name="onCreate-android.os.Bundle-">
 <!--   -->
 </a>
@@ -339,48 +346,24 @@ extends android.preference.PreferenceFragment</pre>
 </dl>
 </li>
 </ul>
-<a name="onStart--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>onStart</h4>
-<pre>public&nbsp;void&nbsp;onStart()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>onStart</code>&nbsp;in class&nbsp;<code>android.preference.PreferenceFragment</code></dd>
-</dl>
-</li>
-</ul>
-<a name="onStop--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>onStop</h4>
-<pre>public&nbsp;void&nbsp;onStop()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>onStop</code>&nbsp;in class&nbsp;<code>android.preference.PreferenceFragment</code></dd>
-</dl>
-</li>
-</ul>
-<a name="setPreferenceSummary-int-">
+<a name="setPreferenceSummary-int-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setPreferenceSummary</h4>
-<pre>protected&nbsp;void&nbsp;setPreferenceSummary(int&nbsp;idPref)</pre>
+<pre>protected&nbsp;void&nbsp;setPreferenceSummary(int&nbsp;idPref,
+                                    java.lang.String&nbsp;value)</pre>
 </li>
 </ul>
-<a name="setPreferenceSummary-java.lang.String-">
+<a name="setPreferenceSummary-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setPreferenceSummary</h4>
-<pre>protected&nbsp;void&nbsp;setPreferenceSummary(java.lang.String&nbsp;prefName)</pre>
+<pre>protected&nbsp;void&nbsp;setPreferenceSummary(java.lang.String&nbsp;prefName,
+                                    java.lang.String&nbsp;value)</pre>
 </li>
 </ul>
 </li>

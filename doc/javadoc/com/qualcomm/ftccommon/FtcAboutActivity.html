@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":10,"i3":9,"i4":10};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -152,10 +152,22 @@ extends ThemedActivity</pre>
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.AboutFragment.html" title="class in com.qualcomm.ftccommon">FtcAboutActivity.AboutFragment</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#aboutFragment">aboutFragment</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected android.content.Context</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#context">context</a></span></code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected java.util.concurrent.Future</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#refreshFuture">refreshFuture</a></span></code>&nbsp;</td>
+</tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#remoteConfigure">remoteConfigure</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#TAG">TAG</a></span></code>&nbsp;</td>
 </tr>
@@ -202,16 +214,44 @@ extends ThemedActivity</pre>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#getTag--">getTag</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static com.qualcomm.ftccommon.CommandList.AboutInfo</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#getLocalAboutInfo--">getLocalAboutInfo</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#initializePrefs--">initializePrefs</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#getTag--">getTag</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#onCreate-android.os.Bundle-">onCreate</a></span>(android.os.Bundle&nbsp;savedInstanceState)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#onDestroy--">onDestroy</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#onPause--">onPause</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#onResume--">onResume</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#refresh--">refresh</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#refreshRemote-RobotCoreCommandList.AboutInfo-">refreshRemote</a></span>(RobotCoreCommandList.AboutInfo&nbsp;aboutInfo)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#startRefreshing--">startRefreshing</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.html#stopRefreshing--">stopRefreshing</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -251,10 +291,37 @@ extends ThemedActivity</pre>
 <a name="context">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>context</h4>
 <pre>protected final&nbsp;android.content.Context context</pre>
+</li>
+</ul>
+<a name="remoteConfigure">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>remoteConfigure</h4>
+<pre>protected final&nbsp;boolean remoteConfigure</pre>
+</li>
+</ul>
+<a name="aboutFragment">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>aboutFragment</h4>
+<pre>protected&nbsp;<a href="../../../com/qualcomm/ftccommon/FtcAboutActivity.AboutFragment.html" title="class in com.qualcomm.ftccommon">FtcAboutActivity.AboutFragment</a> aboutFragment</pre>
+</li>
+</ul>
+<a name="refreshFuture">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>refreshFuture</h4>
+<pre>protected&nbsp;java.util.concurrent.Future refreshFuture</pre>
 </li>
 </ul>
 </li>
@@ -291,13 +358,13 @@ extends ThemedActivity</pre>
 <pre>public&nbsp;java.lang.String&nbsp;getTag()</pre>
 </li>
 </ul>
-<a name="initializePrefs--">
+<a name="getLocalAboutInfo--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>initializePrefs</h4>
-<pre>public static&nbsp;void&nbsp;initializePrefs()</pre>
+<h4>getLocalAboutInfo</h4>
+<pre>public static&nbsp;com.qualcomm.ftccommon.CommandList.AboutInfo&nbsp;getLocalAboutInfo()</pre>
 </li>
 </ul>
 <a name="getAppVersion--">
@@ -319,13 +386,76 @@ extends ThemedActivity</pre>
 <div class="block">https://code.google.com/p/android/issues/detail?id=220039</div>
 </li>
 </ul>
+<a name="startRefreshing--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>startRefreshing</h4>
+<pre>protected&nbsp;void&nbsp;startRefreshing()</pre>
+</li>
+</ul>
+<a name="stopRefreshing--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>stopRefreshing</h4>
+<pre>protected&nbsp;void&nbsp;stopRefreshing()</pre>
+</li>
+</ul>
+<a name="refreshRemote-RobotCoreCommandList.AboutInfo-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refreshRemote</h4>
+<pre>protected&nbsp;void&nbsp;refreshRemote(RobotCoreCommandList.AboutInfo&nbsp;aboutInfo)</pre>
+</li>
+</ul>
+<a name="refresh--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refresh</h4>
+<pre>protected&nbsp;void&nbsp;refresh()</pre>
+</li>
+</ul>
 <a name="onCreate-android.os.Bundle-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onCreate</h4>
+<pre>protected&nbsp;void&nbsp;onCreate(android.os.Bundle&nbsp;savedInstanceState)</pre>
+</li>
+</ul>
+<a name="onResume--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onResume</h4>
+<pre>protected&nbsp;void&nbsp;onResume()</pre>
+</li>
+</ul>
+<a name="onPause--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onPause</h4>
+<pre>protected&nbsp;void&nbsp;onPause()</pre>
+</li>
+</ul>
+<a name="onDestroy--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>onCreate</h4>
-<pre>protected&nbsp;void&nbsp;onCreate(android.os.Bundle&nbsp;savedInstanceState)</pre>
+<h4>onDestroy</h4>
+<pre>protected&nbsp;void&nbsp;onDestroy()</pre>
 </li>
 </ul>
 </li>

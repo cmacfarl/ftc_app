@@ -246,7 +246,6 @@ public class FtcRobotControllerActivity extends Activity
 
     context = this;
     utility = new Utility(this);
-    FtcAboutActivity.initializePrefs();
 
     DeviceNameManagerFactory.getInstance().start(deviceNameStartResult);
 
